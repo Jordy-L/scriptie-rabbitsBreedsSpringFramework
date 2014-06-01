@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+ 
+ <tiles-definitions>
+     
+    <definition name="rabbitsBreedsOverview" template="/WEB-INF/jsp/template.jsp">
+        <put-attribute name="title" value="rabbitsBreedsOverview_title"/>
+        <put-attribute name="navigation" value="/WEB-INF/jsp/navigation.jsp"/> 
+        <put-attribute name="content" value="/WEB-INF/jsp/rabbitsBreed/rabbitsBreedsOverview.jsp"/>
+    </definition>
+
+    <definition name="viewRabbitsBreedPartial" template="/WEB-INF/jsp/rabbitsBreed/viewRabbitsBreed.jsp">
+        <put-attribute name="rabbitsBreedsElements" value="/WEB-INF/jsp/rabbitsBreed/rabbitsBreedsElements.jsp"/>
+    </definition>
+    
+    <definition name="viewRabbitsBreed" template="/WEB-INF/jsp/template.jsp">
+        <put-attribute name="title" value="viewRabbitsBreed_title"/>
+        <put-attribute name="navigation" value="/WEB-INF/jsp/navigation.jsp"/> 
+        <put-attribute name="content" value="viewRabbitsBreedPartial"/>
+    </definition>
+        
+    <definition name="createRabbitsBreedPartial" template="/WEB-INF/jsp/rabbitsBreed/createRabbitsBreed.jsp">
+        <put-attribute name="rabbitsBreedsElements" value="/WEB-INF/jsp/rabbitsBreed/rabbitsBreedsElements.jsp"/>
+    </definition>
+    
+    <definition name="createRabbitsBreed" template="/WEB-INF/jsp/template.jsp">
+        <put-attribute name="title" value="createRabbitsBreed_title"/>
+        <put-attribute name="navigation" value="/WEB-INF/jsp/navigation.jsp"/> 
+        <put-attribute name="content" value="createRabbitsBreedPartial"/>
+    </definition>
+    
+    <definition name="editRabbitsBreedPartial" template="/WEB-INF/jsp/rabbitsBreed/editRabbitsBreed.jsp">
+        <put-attribute name="rabbitsBreedsElements" value="/WEB-INF/jsp/rabbitsBreed/rabbitsBreedsElements.jsp"/>
+    </definition>
+    
+    <definition name="editRabbitsBreed" template="/WEB-INF/jsp/template.jsp">
+        <put-attribute name="title" value="editRabbitsBreed_title"/>
+        <put-attribute name="navigation" value="/WEB-INF/jsp/navigation.jsp"/> 
+        <put-attribute name="content" value="editRabbitsBreedPartial"/>
+    </definition>
+
+</tiles-definitions>
